@@ -24,12 +24,14 @@ AI 기반 피부 분석을 통해 뾰루지 위치 별 연관된 신체 기관�
 ### 👨‍👨팀 소개
 🧑🏻‍💼**기획팀**
 🙋🏼‍♂️[노승욱](https://github.com/woogieboogit)
-🙋🏼‍♂️[정민기](https://github.com/mingi98)
 🙋🏼[황유화](https://github.com/heyhwa)
 
 👩🏻‍💻**개발팀**
 🙋🏼‍[이슬희](https://github.com/howith29)
 🙋🏼[황정현](https://github.com/hhjhhjh) 
+
+**👩🏻‍💻기획 및 개발팀**
+🙋🏼‍♂️[정민기](https://github.com/mingi98)
 <br><hr>
 
 ### ✔️사용 데이터
