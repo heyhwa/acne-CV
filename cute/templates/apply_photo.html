@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>사진 업로드 하기</title>
+</head>
+<body>
+    <h1>사진 업로드 하기</h1>
+    <p>이름: {{ name }}</p>
+    <p>나이: {{ age }}</p>
+    
+    <form method="POST" enctype="multipart/form-data" action="{{ url_for('upload_done') }}">
+        <input type="file" name="file" required />
+        <button type="submit">업로드</button>
+    </form>
+</body>
+</html>
