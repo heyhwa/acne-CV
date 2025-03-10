@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여드름 탐지 결과</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>여드름 탐지 결과</h1>
+    
+    {% if results.error %}
+        <p>{{ results.error }}</p>
+    {% else %}
+        <p>총 탐지된 여드름 개수: {{ results.total_acne_count }}개</p>
+        <h2>부위별 여드름 개수:</h2>
+        <ul>
+            {% for part, count in results.acne_count_by_part.items() %}
+                <li>{{ part }}: {{ count }}개</li>
+            {% endfor %}
+        </ul>
+        {% if results.max_acne_part %}
+            <p>가장 여드름이 많은 부위: {{ results.max_acne_part }}</p>
+        {% else %}
+            <p>여드름이 탐지되지 않았습니다.</p>
+        {% endif %}
+    {% endif %}
+    
+    <a href="/">다시 검사하기</a>
+</body>
+</html>
